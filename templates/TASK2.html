@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    body{
+        background: darkseagreen ;
+        text-align: center;
+        font-size: 50px;
+    }
+
+</style>
+</head>
+<body>
+<h1>Homework 2 <P style="position: relative; font-size: 20px; opacity: 70%; ">TASK2</h1>
+        <header>
+            <nav>
+                <ul>
+
+                    <li><a href="http://127.0.0.1:5000/requirements/">First Task</a></li>
+                    <li><a href="http://127.0.0.1:5000">Home</a></li>
+                    <li><a href="http://127.0.0.1:5000/mean/">Third Task</a></li>
+                    <li><a href="http://127.0.0.1:5000/space/">Fourth Task</a></li>
+                </ul>
+            </nav>
+        </header>
+<form method="GET">
+    <input
+           type="number"
+           name="num"
+           min="1"
+           style="width: 400px;height: 60px"
+           placeholder="number of random names and e-mails ">
+    <button  type="submit">Submit</button>
+</form>
+<h4> {{ num }}  random names and e-mails.</h4>
+{{ dict1 }}
+<div style="text-align: center; padding: 50px; font-family: Rubik, sans-serif; font-size: 15px; ">{{dictionary}}</div>
+</body>
+</html>
