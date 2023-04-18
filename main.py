@@ -40,10 +40,10 @@ def task3():
     with open("hw.csv") as fi:
         reader = list(csv.reader(fi))
         reader.pop(0)
-        Height_Average = mean([float(reader[i][1]) for i in range(len(reader) - 1)]) * 2.54
-        Weight_Average = mean([float(reader[i][2]) for i in range(len(reader) - 1)]) / 2.205
+        height_average = mean([float(reader[i][1]) for i in range(len(reader) - 1)]) * 2.54
+        weight_average = mean([float(reader[i][2]) for i in range(len(reader) - 1)]) / 2.205
 
-    return flask.render_template("TASK3.html", Height_Average=Height_Average, Weight_Average=Weight_Average)
+    return flask.render_template("TASK3.html", height_average=height_average, weight_average=weight_average)
 
 
 @app.route("/space/")
